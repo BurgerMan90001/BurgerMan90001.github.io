@@ -7,13 +7,24 @@ html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  /* height: 100vh; */
 }
 body {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+    
+  justify-content: center;
+  align-items: center;
+  /* margin: 0; */
+  height: 100vh;
 }
 header,
 main {
   display: block;
+}
+.header {
+  display: flex;
+  justify-content: center;
 }
 [hidden] {
   display: none;
@@ -305,6 +316,9 @@ a.text-warning:hover {
 .row {
   margin-right: -15px;
   margin-left: -15px;
+}
+.col-sm-11 {
+  margin: 0;
 }
 .col-sm-1,
 .col-sm-10,
